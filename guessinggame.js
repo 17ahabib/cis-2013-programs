@@ -1,3 +1,4 @@
+//the following four lines start the loop
 var p;
 p = 0;
 
@@ -87,6 +88,6 @@ while (p === 0) {
     // provides final output upon successful guessing
     alert("Congratulations!!! You guessed the correct number (" + intRandom +")\n" +
             " and it only took you " + intCount + " attempts!");
-    
+    //when p does not equal 0 the loop ends
     p = parseInt(prompt("Would you like to play again? Enter 0 for yes, 1 for no."));
 }

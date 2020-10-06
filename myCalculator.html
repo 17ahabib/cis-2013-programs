@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>hi</title>
+    <script>
+            var menu = 0;
+            for ( ; ; ) {
+				menu = prompt("Enter a number 1-7 or type *** to exit");
+				if ((!(isNaN(menu)) && ((menu > 0) && (menu < 8))) || menu === "***") break;
+            }
+            while (menu != "***") {
+                
+                if (menu === "1") {
+                    var firstNumber = parseInt(prompt("Enter your first number"));
+                    var secondNumber = parseInt(prompt("Enter your second number"));
+                    var Total = firstNumber + secondNumber;
+                    alert("Your total is " + Total); 
+                } 
+                else if (menu === "2") {
+                    var firstNumber = parseInt(prompt("Enter your first number"));
+                    var secondNumber = parseInt(prompt("Enter your second number"));
+                    var Total = firstNumber - secondNumber;
+                    alert("Your total is " + Total); 
+                }
+                else if (menu === "3") {
+                    var firstNumber = parseInt(prompt("Enter your first number"));
+                    var secondNumber = parseInt(prompt("Enter your second number"));
+                    var Total = firstNumber * secondNumber;
+                    alert("Your total is " + Total);    
+                }
+                else if (menu === "4") {
+                    var firstNumber = parseInt(prompt("Enter your first number"));
+                    var secondNumber = parseInt(prompt("Enter your second number"));
+                    var Total = firstNumber / secondNumber;
+                    alert("Your total is " + Total);
+                }
+                else if (menu === "5") {
+                    var firstNumber = parseInt(prompt("Enter your base number"));
+                    var secondNumber = parseInt(prompt("Enter your exponent number"));
+                    var Total = Math.pow(firstNumber, secondNumber);
+                    alert("Your total is " + Total);
+                }
+                else if (menu === "6") {
+                    var total1 = 0;
+                    var count1 = 0;
+                    var nextNum = "";
+                    for ( ; ; ) {
+                        nextNum = prompt("Enter number or *** to exit");
+                        
+                        if (nextNum = "***") break;
+                        nextNum = parseFloat(nextNum);
+                        if (!(isNaN(nextNum))) {
+                            count1++;
+                            total1 += nextNum;
+                        }
+                    }
+                }
+                // 2nd prompt ask for number
+                for ( ; ; ) {
+				menu = prompt("Enter a number 1-7 or type *** to exit");
+				if ((!(isNaN(menu)) && ((menu > 0) && (menu < 8))) || menu === "***") break;
+                }
+            }
+           
+    
+           
+            
+        </script>
+</head>
+<body>
+<!--<form id="calculator" name="calculator" onsubmit="return calculator();" method="POST">
+        <label for="resultBox">Result:</label>
+        <input type="text" id="resultBox" disabled="disabled" />
+        <br />
+    
+        <label>&nbsp;</label>
+        <input type="submit" id="run" value="Calculate">
+    
+    </form>
+-->    
+        
+    
+
+
+</body>
+</html>
